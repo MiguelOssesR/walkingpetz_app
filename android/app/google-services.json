@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1027488830018",
+    "project_id": "walkingpetz2024",
+    "storage_bucket": "walkingpetz2024.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1027488830018:android:e0bc769ed705c03de613db",
+        "android_client_info": {
+          "package_name": "com.example.entorno_de_aprendizaje"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRqQvbqc-cO0aVbe8Ztc0D4IIZsM5pZSM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
