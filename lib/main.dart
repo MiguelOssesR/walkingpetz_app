@@ -26,6 +26,7 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+
       appBar: AppBar(
         title: const Text(
           'Walking Petz',
@@ -36,8 +37,11 @@ class _HomeState extends State<Home> {
         ),
         centerTitle: true,
       ),
-      body: Column(
+
+      body: ListView(
         children: [
+
+          //Imagen Logo
           Container(
             decoration: const BoxDecoration(
               image: DecorationImage(
@@ -46,12 +50,15 @@ class _HomeState extends State<Home> {
             ),
             height: 400, // Altura de la imagen
           ),
-          const SizedBox(
-              height: 80), // Espacio entre la imagen y el campo de texto
+
+          const SizedBox(height: 80),
+          
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 80.0),
             child: Column(
               children: [
+
+                //InputText Usuario
                 Container(
                   decoration: BoxDecoration(
                     color: Colors.white,
@@ -70,7 +77,10 @@ class _HomeState extends State<Home> {
                     ),
                   ),
                 ),
+                
                 const SizedBox(height: 20), // Espacio entre los campos
+
+                //InputText Contraseña
                 Container(
                   decoration: BoxDecoration(
                     color: Colors.white,
@@ -90,7 +100,10 @@ class _HomeState extends State<Home> {
                     ),
                   ),
                 ),
+
                 const SizedBox(height: 30), // Espacio antes del botón
+
+                //Boton de Iniciar Sesion
                 SizedBox(
                   width: double.infinity, // Ancho del botón igual al contenedor
                   child: ElevatedButton(
