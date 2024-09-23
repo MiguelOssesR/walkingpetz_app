@@ -108,7 +108,7 @@ class _HomeState extends State<Home> {
                   width: double.infinity, // Ancho del botón igual al contenedor
                   child: ElevatedButton(
                     onPressed: () {
-                      // Acción al presionar el botón
+                      print("Button was pressed");
                     },
                     style: ElevatedButton.styleFrom(
                       padding: const EdgeInsets.symmetric(vertical: 15),
