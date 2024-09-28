@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:walking_petz/Services/authentication.dart';
+import 'package:walking_petz/Screens/main_screen.dart';
 
 
 class Singup extends StatefulWidget {
@@ -35,7 +36,15 @@ class _SingupState extends State<Singup> {
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(content: Text(res)),
     );
+
+    if (res == "Usuario registrado correctamente") {
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(builder: (context) => const mainScreen()),
+      );
+    }
   }
+
 
   @override
   Widget build(BuildContext context) {

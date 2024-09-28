@@ -1,7 +1,7 @@
-import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:walking_petz/Services/authentication.dart';
 import 'package:walking_petz/Screens/singUp_screen.dart';
+import 'package:walking_petz/Screens/main_screen.dart';
 
 class Login extends StatefulWidget {
   const Login({super.key});
@@ -36,6 +36,13 @@ class _LoginState extends State<Login> {
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(content: Text(res)),
     );
+
+    if (res == "Usuario autenticado correctamente") {
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(builder: (context) => const mainScreen()),
+      );
+    }
   }
 
   @override
@@ -60,11 +67,11 @@ class _LoginState extends State<Login> {
                 image: AssetImage('assets/images/welcome_screen_pic.webp'),
               ),
             ),
-            height: 400, // Altura de la imagen
+            height: 200, // Altura de la imagen
           ),
-          const SizedBox(height: 40),
+          const SizedBox(height: 30),
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 80.0),
+            padding: const EdgeInsets.symmetric(horizontal: 40.0),
             child: Column(
               children: [
                 // InputText Usuario
